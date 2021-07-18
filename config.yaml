@@ -1,0 +1,26 @@
+data:
+  list_path: ./data/data.json
+  data_list:
+    Data1: 
+      - [1,2]
+    Data2:
+      - [1,2]
+
+OUT_ROOT: ./res 
+
+Optimizer:
+  type: GA
+  params:
+    pc: 0.7
+    pm: 0.1
+    GENERATION_SIZE: 100
+    POPULATION_SIZE: 30
+    Min_delta_theta: -40
+    Max_delta_theta: 40
+    Min_delta_O: -30
+    Max_delta_O: 30
+    Min_delta_I: -40
+    Max_delta_I: 40
+Match: 
+  type: DTW
+  dist: scd
